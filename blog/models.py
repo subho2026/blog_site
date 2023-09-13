@@ -24,20 +24,12 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-class Comment(models.Model):
-    post = models.ForeignKey(Post,on_delete=models.CASCADE,related_name='comments')
-    name = models.CharField(max_length=80)
-    email = models.EmailField()
-    body = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    active = models.BooleanField(default=False)
 
-    class Meta:
-        ordering = ['created_on']
+class Contact(models.Model):
+    fullname = models.CharField(max_length=255)
+    email = models.EmailField()
+    subject = models.CharField(max_length=255)
+    message = models.TextField()
 
     def __str__(self):
-        return 'Comment {} by {}'.format(self.body, self.name)
-
-
-def comment():
-    return None
+        return self.email
