@@ -3,7 +3,27 @@
 <style>
         .card{
             box-shadow: 0 16px 48px #E3E7EB;
+            transition: box-shadow 0.3s ease-in-out;
         }
+    /* Button styles */
+  .btn {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #333;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 30px;
+      margin-top: 30px;
+      transition: background-color 0.2s ease-in-out;
+  }
+
+  .btn:hover {
+      background-color: #222;
+  }
+
+
 
 </style>
 
@@ -12,11 +32,15 @@
 <div class="card my-4">
         <h5 class="card-header">About me</h5>
     <div class="card-body">
-        <p class="card-text"> This awesome blog is made on the top of our Favourite full stack Framework 'Django'...</p>
-        <a href="#"
+        <p class="card-text">
+        Welcome to my profile, for tech enthusiasts, who are seeking simplicity in this fast-paced tech world. Join me on the journey of understanding technology and upgrading ourselves in this ever-growing digital landscape. Let's decode tech together! :)
+        </p>
+        <a href="https://www.linkedin.com/in/subhankar-dey-781698a3/" target=”_blank”
            class="btn btn-danger">Know more!</a>
     </div>
 </div>
 </div>
 
 {% endblock sidebar %}
+
+<

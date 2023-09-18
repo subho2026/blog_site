@@ -1,8 +1,9 @@
-from django.forms import ModelForm
-from .models import Contact
+from django import forms
+from .models import Comment
 
 
-class ContactForm(ModelForm):
+class CommentForm(forms.ModelForm):
     class Meta:
-        model = Contact
-        fields = '__all__'
+        model = Comment
+        fields = ("name", "email", "body")
+

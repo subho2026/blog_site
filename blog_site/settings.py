@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'contact',
 ]
 
 MIDDLEWARE = [
@@ -66,7 +65,6 @@ TEMPLATES = [
         },
     },
 ]
-
 
 WSGI_APPLICATION = 'blog_site.wsgi.application'
 
@@ -118,3 +116,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap"
+CRISPY_TEMPLATE_PACK = "bootstrap"
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
