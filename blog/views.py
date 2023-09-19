@@ -4,6 +4,7 @@ from blog.forms import CommentForm
 from rest_framework import viewsets
 from .serializer import PostSerializer
 from .models import Post
+from django.shortcuts import render
 
 
 class PostViewSet(viewsets.ModelViewSet):
@@ -37,3 +38,4 @@ def post_detail(request, slug):
     return render(request, template_name,
                   context={'post': post, 'list_of_comments': comments, 'new_comment': new_comment,
                            'comment_form': comment_form})
+

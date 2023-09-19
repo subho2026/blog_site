@@ -39,6 +39,14 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
 form button[type="submit"] {
     background-color: #007bff;
@@ -51,8 +59,22 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #222;
+    }
+
+form button[type="submit"]{
+    isplay: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-top: 30px;
+    transition: background-color 0.2s ease-in-out;
 }
+
 
 </style>
 
